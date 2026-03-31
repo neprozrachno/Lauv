@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дискография</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .grid-showcase {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 20px;
+
+        margin-top: 40px;
+
+        margin-bottom: 30px;
+        }
+
+        .grid-elem {
+        position: relative;
+        background: white;
+        height: 400px;
+        aspect-ratio: 1/1;
+        overflow: hidden;
+
+        cursor: pointer;
+        }
+
+        .grid-elem:hover {
+        background: black;
+        }
+
+        .elem-cover {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        
+        transition: 0.3s;
+        }
+
+        .hover-content {
+        position: absolute;
+        inset: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+
+        opacity: 0;
+        transition: all 0.3s ease;
+
+        box-sizing: border-box;
+        padding: 20px;
+
+        font-family: 'lauv';
+        }
+
+        .grid-elem:hover .hover-content {
+        opacity: 1;
+        }
+
+        .grid-elem:hover .elem-cover {
+        transform: scale(1.1);
+        }
+
+        .elem-title {
+        font-size: 35px;
+        text-align: center;
+        }
+
+        .elem-subtitle {
+        font-size: 25px;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="menu-list">
+                <li><a href="main.html" class="cool-font">LAUV</a></li>
+                <li><a href="discography.html">дискография</a></li>
+                <li><a href="nominations.html">номинации</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="discografy-content">
+            <div class="section-topic">
+                Альбомы
+            </div>
+            <div class="grid-showcase">
+                <a class="grid-elem" href="./albums.pages/album.18.html">
+                    <div class="elem-cover" style="background-image: url('./photos/imywiw18.jpg'); background-position: center; background-size: cover;">
+
+                    </div>
+                    <div class="hover-content">
+                        <div class="elem-title">
+                            I Met You When I Was 18.
+                        </div>
+                        <div class="elem-subtitle">
+                            2018
+                        </div>
+                    </div>
+                </a>
+
+                <a class="grid-elem" href="./albums.pages/album.feelin.html">
+                    <div class="elem-cover" style="background-image: url('./photos/hif.jpg'); background-position: center; background-size: cover;">
+
+                    </div>
+                    <div class="hover-content">
+                        <div class="elem-title">
+                            ~How I'm Feeling~
+                        </div>
+                        <div class="elem-subtitle">
+                            2020
+                        </div>
+                    </div>
+                </a>
+
+                <a class="grid-elem" href="./albums.pages/album.all4nothin.html">
+                    <div class="elem-cover" style="background-image: url('./photos/a4n.jpg'); background-position: center; background-size: cover;">
+
+                    </div>
+                    <div class="hover-content">
+                        <div class="elem-title">
+                            All 4 Nothing
+                        </div>
+                        <div class="elem-subtitle">
+                            2022
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="section-topic">
+                Синглы
+            </div>
+            <div class="grid-showcase">
+
+                <a class="grid-elem" href="https://www.youtube.com/watch?v=aSe1adndzfs">
+                    <div class="elem-cover" style="background-image: url('./photos/the_other.jpg'); background-position: center; background-size: cover;">
+
+                    </div>
+                    <div class="hover-content">
+                        <div class="elem-title">
+                            The Other
+                        </div>
+                        <div class="elem-subtitle">
+                            2015
+                        </div>
+                    </div>
+                </a>
+
+                <a class="grid-elem" href="https://www.youtube.com/watch?v=BcqxLCWn-CE">
+                    <div class="elem-cover" style="background-image: url('./photos/ilmb.jpg'); background-position: center; background-size: cover;">
+
+                    </div>
+                    <div class="hover-content">
+                        <div class="elem-title">
+                            I Like Me Better
+                        </div>
+                        <div class="elem-subtitle">
+                            2017
+                        </div>
+                    </div>
+                </a>
+
+                <a class="grid-elem" href="https://www.youtube.com/watch?v=kb_e5UkI7ak">
+                    <div class="elem-cover" style="background-image: url('./photos/Superhero.jpg'); background-position: center; background-size: cover;">
+
+                    </div>
+                    <div class="hover-content">
+                        <div class="elem-title">
+                            Superhero
+                        </div>
+                        <div class="elem-subtitle">
+                            2018
+                        </div>
+                    </div>
+                </a>
+                
+                 <a class="grid-elem" href="https://www.youtube.com/watch?v=boUl0jPZMdg">
+                    <div class="elem-cover" style="background-image: url('./photos/I\'m\ So\ Tired...jpg'); background-position: center; background-size: cover;">
+
+                    </div>
+                    <div class="hover-content">
+                        <div class="elem-title">
+                            I'm so tired...
+                        </div>
+                        <div class="elem-subtitle">
+                            2019
+                        </div>
+                    </div>
+                </a>
+                <a class="grid-elem" href="https://www.youtube.com/watch?v=2k5w6eTxGXk">
+                    <div class="elem-cover" style="background-image: url('./photos/feelings.jpg'); background-position: center; background-size: cover;">
+
+                    </div>
+                    <div class="hover-content">
+                        <div class="elem-title">
+                            Feelings
+                        </div>
+                        <div class="elem-subtitle">
+                            2019
+                        </div>
+                    </div>
+                </a>
+                <a class="grid-elem" href="https://www.youtube.com/watch?v=rfi6AvhZC6E">
+                    <div class="elem-cover" style="background-image: url('./photos/dishes.jpg'); background-position: center; background-size: cover;">
+
+                    </div>
+                    <div class="hover-content">
+                        <div class="elem-title">
+                            Dishes
+                        </div>
+                        <div class="elem-subtitle">
+                            2020
+                        </div>
+                    </div>
+                </a>
+
+                <a class="grid-elem" href="https://www.youtube.com/watch?v=0lm0XNoyWaU">
+                    <div class="elem-cover" style="background-image: url('./photos/2021.png'); background-position: center; background-size: cover;">
+
+                    </div>
+                    <div class="hover-content">
+                        <div class="elem-title">
+                            2021
+                        </div>
+                        <div class="elem-subtitle">
+                            2020
+                        </div>
+                    </div>
+                </a>
+
+                <a class="grid-elem" href="https://www.youtube.com/watch?v=7ympPwhl0iU">
+                    <div class="elem-cover" style="background-image: url('./photos/lult.jpg'); background-position: center; background-size: cover;">
+
+                    </div>
+                    <div class="hover-content">
+                        <div class="elem-title">
+                            Love U Like That
+                        </div>
+                        <div class="elem-subtitle">
+                            2023
+                        </div>
+                    </div>
+                </a>
+
+                <a class="grid-elem" href="https://www.youtube.com/watch?v=24uBMkY-X3g">
+                    <div class="elem-cover" style="background-image: url('./photos/First\ Heartbreak.jpg'); background-position: center; background-size: cover;">
+
+                    </div>
+                    <div class="hover-content">
+                        <div class="elem-title">
+                            First Heartbreak
+                        </div>
+                        <div class="elem-subtitle">
+                            2024
+                        </div>
+                    </div>
+                </a>
+
+                <a class="grid-elem" href="https://www.youtube.com/watch?v=c_10qS7amjk">
+                    <div class="elem-cover" style="background-image: url('./photos/Mean\ It.jpg'); background-position: center; background-size: cover;">
+
+                    </div>
+                    <div class="hover-content">
+                        <div class="elem-title">
+                            Mean It (feat. LANY)
+                        </div>
+                        <div class="elem-subtitle">
+                            2019
+                        </div>
+                    </div>
+                </a>
+
+                <a class="grid-elem" href="https://www.youtube.com/watch?v=5qFVUYBWfGw">
+                    <div class="elem-cover" style="background-image: url('./photos/Fake.jpg'); background-position: center; background-size: cover;">
+
+                    </div>
+                    <div class="hover-content">
+                        <div class="elem-title">
+                            Fake (feat. Conan Gray)
+                        </div>
+                        <div class="elem-subtitle">
+                            2020
+                        </div>
+                    </div>
+                </a>
+
+                <a class="grid-elem" href="https://www.youtube.com/watch?v=Yt_SPQFbHj4">
+                    <div class="elem-cover" style="background-image: url('./photos/Crush.jpg'); background-position: center; background-size: cover;">
+
+                    </div>
+                    <div class="hover-content">
+                        <div class="elem-title">
+                            Crush (feat. Bella Poarch)
+                        </div>
+                        <div class="elem-subtitle">
+                            2023
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

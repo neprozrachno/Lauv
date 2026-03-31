@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Номинации</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .nominations-container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 100px auto 0;
+        }
+        
+        .awards-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            font-family: 'helvetica';
+            font-size: 22px; 
+        }
+        
+        .awards-table th, .awards-table td {
+            border: 1px solid #3d6eb2;
+            padding: 15px; 
+            text-align: left;
+            vertical-align: middle;
+        }
+        
+        .awards-table th {
+            background-color: rgba(61, 110, 178, 0.2);
+            font-family: 'helvetica';
+            font-size: 24px;
+        }
+        
+        .awards-table tr:nth-child(even) {
+            background-color: rgba(61, 110, 178, 0.1);
+        }
+        
+        .photo-cell {
+            width: 200px;
+            height: 200px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* Обновленные стили для списка определений */
+        .definitions-section {
+            margin-top: 50px;
+            background-color: rgba(61, 110, 178, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        
+        .definitions-list {
+            margin-top: 20px;
+        }
+        
+        .definitions-list dt {
+            font-family: 'helvetica';
+            font-size: 28px;
+            color: #3d6eb2;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        
+        .definitions-list dd {
+            font-family: 'helvetica';
+            font-size: 22px;
+            margin-left: 20px;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="menu-list">
+                <li><a href="./main.html" class="cool-font">LAUV</a></li>
+                <li><a href="./discography.html">дискография</a></li>
+                <li><a href="./nominations.html" id="current-page">номинации</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div id="nominations-container" class="nominations-container">
+            <h1 style="color: #3d6eb2; text-align: center; font-size: 48px; margin-bottom: 30px; font-family: gergel;">Награды и номинации</h1>
+            
+            <table class="awards-table">
+                <tr>
+                    <th>Год</th>
+                    <th>Премия</th>
+                    <th>Категория</th>
+                    <th>Результат</th>
+                    <th>Фотография</th>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>iHeartRadio Titanium Award</td>
+                    <td>Лучшая танцевальная/электронная песня ("I Like Me Better")</td>
+                    <td>Победа</td>
+                    <td>Отсутствует</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>iHeartRadio Music Awards</td>
+                    <td>Лучший новый поп-артист</td>
+                    <td>Номинация</td>
+                    <td class="photo-cell" style="background-image: url(../kursa4/photos/aw2.jpg);"></td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>Global Awards</td>
+                    <td>Восходящая звезда</td>
+                    <td>Номинация</td>
+                    <td>Отсутствует</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>AIM Independent Music Awards</td>
+                    <td>Независимый артист</td>
+                    <td>Победа</td>
+                    <td>Отсутствует</td>
+                </tr>
+            </table>
+            
+            <h2 style="color: #3d6eb2; text-align: center; font-size: 48px; margin-bottom: 30px; font-family: gergel;">Статистика номинаций</h2>
+            <table class="awards-table">
+                <tr>
+                    <th>Год</th>
+                    <th>Номинации</th>
+                    <th>Победы</th>
+                    <th>Детали</th>
+                </tr>
+                <tr>
+                    <td>2018-2021</td>
+                    <td>11</td>
+                    <td>2</td>
+                    <td>
+                        <table style="width: 100%; font-family: 'helvetica'; font-size: 22px;">
+                            <tr>
+                                <td>Международные</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Национальные</td>
+                                <td>3</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="definitions-section">
+                <h2 style="color: #3d6eb2; text-align: center; font-size: 36px; margin-bottom: 30px; font-family: gergel;">Определения премий</h2>
+                
+                <dl class="definitions-list">
+                    <dt>iHeartRadio Titanium Award</dt>
+                    <dd>Престижная награда от американской радиостанции iHeartRadio, вручаемая за достижения в музыке. Titanium Award получают песни, которые достигли 1 миллиарда прослушиваний на станциях iHeartRadio.</dd>
+                    
+                    <dt>iHeartRadio Music Awards</dt>
+                    <dd>Ежегодная музыкальная премия, основанная радиостанцией iHeartRadio. Награды вручаются по результатам голосования слушателей и учитывают популярность на радиостанциях.</dd>
+                    
+                    <dt>Global Awards</dt>
+                    <dd>Международная музыкальная премия, вручаемая в Великобритании. Охватывает различные жанры музыки и вручается как за международные, так и за локальные достижения.</dd>
+                    
+                    <dt>AIM Independent Music Awards</dt>
+                    <dd>Премия, вручаемая Ассоциацией независимой музыки (AIM) Великобритании. Награждает достижения артистов, работающих с независимыми лейблами.</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var tableRows = document.querySelectorAll('.awards-table tr');
+            
+            tableRows.forEach(function(row) {
+                row.addEventListener('mouseover', function() {
+                    this.style.backgroundColor = 'rgba(61, 110, 178, 0.2)';
+                });
+                
+                row.addEventListener('mouseout', function() {
+                    if (this.rowIndex % 2 === 0) {
+                        this.style.backgroundColor = 'rgba(61, 110, 178, 0.1)';
+                    } else {
+                        this.style.backgroundColor = '';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

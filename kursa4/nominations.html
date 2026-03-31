@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Номинации</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .nominations-container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 100px auto 0;
+        }
+        
+        .awards-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+        
+        .awards-table th, .awards-table td {
+            border: 1px solid #3d6eb2;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .awards-table th {
+            background-color: rgba(61, 110, 178, 0.2);
+            font-family: 'lauv';
+            font-size: 24px;
+        }
+        
+        .awards-table tr:nth-child(even) {
+            background-color: rgba(61, 110, 178, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <!-- Маркированный список для меню -->
+            <ul class="menu-list">
+                <li><a href="../main.html" class="cool-font">LAUV</a></li>
+                <li><a href="../discography.html">дискография</a></li>
+                <li><a href="../nominations.html" id="current-page">номинации</a></li>
+                <li><a href="../tours.html">туры</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div id="nominations-container" class="nominations-container">
+            <!-- Встроенный стиль в тег -->
+            <h1 style="color: #3d6eb2; text-align: center; font-size: 48px; margin-bottom: 30px;">Награды и номинации</h1>
+            
+            <!-- Таблица с наградами -->
+            <table class="awards-table">
+                <tr>
+                    <th>Год</th>
+                    <th>Премия</th>
+                    <th>Категория</th>
+                    <th>Результат</th>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>MTV Europe Music Awards</td>
+                    <td>Лучший новый артист</td>
+                    <td>Номинация</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>iHeartRadio Music Awards</td>
+                    <td>Лучший новый поп-артист</td>
+                    <td>Номинация</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>Billboard Music Awards</td>
+                    <td>Лучшая танцевальная/электронная песня ("I Like Me Better")</td>
+                    <td>Номинация</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>Teen Choice Awards</td>
+                    <td>Choice Song: Male Artist ("I Like Me Better")</td>
+                    <td>Победа</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>MTV Video Music Awards</td>
+                    <td>Лучшее сотрудничество ("fuck, i'm lonely" с Anne-Marie)</td>
+                    <td>Номинация</td>
+                </tr>
+            </table>
+            
+            <!-- Вложенная таблица -->
+            <h2 style="color: #3d6eb2; margin-top: 40px;">Статистика номинаций</h2>
+            <table class="awards-table">
+                <tr>
+                    <th>Год</th>
+                    <th>Номинации</th>
+                    <th>Победы</th>
+                    <th>Детали</th>
+                </tr>
+                <tr>
+                    <td>2018-2021</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>Международные</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Национальные</td>
+                                <td>4</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            
+            <!-- Ссылки разных типов -->
+            <div style="margin-top: 40px;">
+                <h3 style="color: #3d6eb2;">Дополнительная информация:</h3>
+                <!-- Внешняя ссылка -->
+                <p><a href="https://www.lauvsongs.com/awards" target="_blank">Официальный сайт с наградами</a></p>
+                <!-- Внутренняя ссылка -->
+                <p><a href="../discography.html">Посмотреть дискографию</a></p>
+                <!-- Якорь -->
+                <p><a href="#nominations-container">Вернуться к началу</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // JavaScript для интерактивности таблицы
+        document.addEventListener('DOMContentLoaded', function() {
+            var tableRows = document.querySelectorAll('.awards-table tr');
+            
+            tableRows.forEach(function(row) {
+                row.addEventListener('mouseover', function() {
+                    this.style.backgroundColor = 'rgba(61, 110, 178, 0.2)';
+                });
+                
+                row.addEventListener('mouseout', function() {
+                    if (this.rowIndex % 2 === 0) {
+                        this.style.backgroundColor = 'rgba(61, 110, 178, 0.1)';
+                    } else {
+                        this.style.backgroundColor = '';
+                    }
+                });
+            });
+            
+            // Изменение цвета текущей страницы в меню
+            var currentPage = document.getElementById('current-page');
+            currentPage.style.color = '#3d6eb2';
+            currentPage.style.fontWeight = 'bold';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>LAUV</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="menu-list">
+                <li><a href="main.html" class="cool-font">LAUV</a></li>
+                <li><a href="discography.html">дискография</a></li>
+                <li><a href="nominations.html">номинации</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="background-image" id="image1">
+        <div class="main-text">
+            <h1>или как из продюсера<br>стать мировой поп-звездой?</h1>
+        </div>
+    </div>
+
+    <div class="background-image image2" id="image2">
+        <div class="main-text21">
+            <p>А КТО <br> ЭТО?</p>
+        </div>
+        <div class="main-text22">
+            <p>Lauv - американский певец,<br>композитор и продюсер.<br>Обрёл большую популярность<br>после выхода сингла<br>«I Like Me Better».<br>Он пишет песни и для других<br>исполнителей, например,<br>«Boys» для Charli XCX,<br>«No Promises» для Cheat Codes.</p>
+        </div>
+    </div>
+
+    <div class="background-image image3" id="image3">
+        <div class="collapsible-container">
+            <button class="collapsible">ДЕТСТВО И ШКОЛА</button>
+            <div class="content">
+                <p>С детства Ари увлекался музыкой, играл на фортепиано и гитаре. В 12 лет он создал рок-дуэт, а в 13 — метал-группу. Позже начал экспериментировать с акустической гитарой и синтезаторами, в 14 лет написал свою первую песню Parting Ways и основал сольный проект Somersault Sunday. Ари выкладывал музыку на MySpace, общался с фанатами и выступал с группой, став известным благодаря подвальным концертам.</p>
+            </div>
+
+            <button class="collapsible">УЧЁБА В КОЛЛЕДЖЕ</button>
+            <div class="content">
+                <p>
+                    В колледже Лефф писал песни для других артистов, но вдохновившись Полом Саймоном, начал раскрывать личные переживания в музыке. Тогда же взял псевдоним Lauv (от латышского «Лев»), отсылая к своим корням и знаку зодиака.
+После расставания в 2014-м он записал The Other — смесь R&B, инди-попа и джаза. Песня стала вирусной в 2015 году, попав в топы Spotify и The Hype Machine.
+Окончив университет, Lauv подписал контракт и выпустил дебютный мини-альбом Lost in the Light. Параллельно писал для других, включая хит No Promises (Cheat Codes и Деми Ловато), который попал в топ-10 Billboard.
+                </p>
+            </div>
+
+            <button class="collapsible">БОЛЬШАЯ ПОПУЛЯРНОСТЬ</button>
+            <div class="content">
+                <p>В мае 2017 года Ари выпустил хит I Like Me Better, достигший 27-го места в Billboard Hot 100 и получивший платиновые сертификации в 7 странах.
+                    В 2017-2018 годах он отправился в сольный тур Late Nights, Deep Talks, а после запустил первое мировое турне I Met You When I Was 18.
+                    В мае 2018 года вышел его альбом/плейлист I Met You When I Was 18 (1 млрд стримов на Spotify), включавший хиты I Like Me Better и The Other.
+                </p>
+            </div>
+
+            <button class="collapsible">НАСТОЯЩЕЕ ВРЕМЯ</button>
+            <div class="content">
+                <p>В 2019 году Lauv выпустил хит «I'm So Tired...» с Троем Сиваном и отправился в масштабный азиатский тур, охвативший 13 стран. Тогда же он начал анонсировать свой дебютный альбом «How i'm Feeling», выпуская треки по мере их создания. Первым стал «Drugs & the Internet», за которым последовали другие синглы: «Sad Forever», «Feelings» и фит с группой LANY «Mean It», а «Fuck, i'm Lonely» с Энн-Мари стал саундтреком к сериалу «13 причин почему».
+                    Параллельно с этим Ари провёл масштабный мировой тур How i'm Feeling Tour. В этот период он работал с BTS над «Make It Right» и «Who», позже дебютировал в Болливуде с саундтреком «Dil Na Jaaneya» к фильму Good Newwz. Творческий марафон завершился в марте 2020 года релизом долгожданного дебютного альбома «How i'm Feeling», ставшего итогом нескольких лет работы.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="background-image image4" id="image4">
+        <div class="fio">
+            <p>РАБОТУ ВЫПОЛНИЛА<br>СТУДЕНТКА ГРУППЫ ИСТ-412<br>СЕВАСТЬЯНОВА АЛИСА</p>
+        </div>
+        <a href="#" class="back-to-top">вернуться наверх</a>
+    </div>
+
+
+
+<script>
+    document.querySelectorAll('.collapsible').forEach(button => {
+        button.addEventListener('click', function() {
+            this.classList.toggle('active');
+            const content = this.nextElementSibling;
+                
+            document.querySelectorAll('.content').forEach(item => {
+                if (item !== content && item.style.maxHeight) {
+                    item.style.maxHeight = null;
+                    item.previousElementSibling.classList.remove('active');
+                }
+            });
+                
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        });
+    });
+</script>
+
+<script>
+    const backToTopBtn = document.querySelector('.back-to-top');
+    
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            backToTopBtn.classList.add('visible');
+        } else {
+            backToTopBtn.classList.remove('visible');
+        }
+    });
+    
+    backToTopBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    </script>
+
+</body>
+</html>

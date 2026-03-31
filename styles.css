@@ -1,0 +1,399 @@
+@font-face {
+    font-family: 'lauv';
+    src: url('fonts/SupriaSans-BlackItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'gergel';
+  src: url('fonts/gergel_font.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'helvetica';
+  src: url('helvetica_lightoblique.otf') format('opentype');
+}
+
+
+.cool-font {
+  font-family: 'lauv' !important;
+}
+
+:root {
+  color: white;
+  font-size: 4px;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+
+  .header {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;  
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
+  }
+  
+  .menu-list {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 84px; 
+  }
+  
+  .menu-list li a {
+    color: white;
+    text-decoration: none;
+    font-family: gergel;
+    font-size: 40px;
+  }
+  
+  .main-text {
+    position: relative;
+    left: 10px;
+    top: -20px;
+  }
+  
+  .main-text h1 {
+    font-family: gergel;
+    font-size: 80px;
+    margin: 0;
+
+  }
+
+  .background-image {
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+    display: flex;
+
+    background-repeat: no-repeat; 
+
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+ 
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #image1 {
+    background-image: url('./backgorunds/background1.jpg');
+    align-items: end;
+    justify-content: left;
+  }
+  
+  #image2 {
+    background-image: url('./backgorunds/background2.jpg');
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #image3 {
+    background-image: url('./backgorunds/background3.jpg');
+    align-items: end;
+    justify-content: left;
+  }
+
+  #image4 {
+    background-image: url('./backgorunds/background4.jpg');
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+.main-text21 {
+  position: relative;
+  left: 3%;
+}
+
+.main-text21 p {
+  font-family: gergel;
+  font-size: 90px;
+}
+
+.main-text22 {
+  position: relative;
+  right: 3%;
+}
+
+.main-text22 p {
+  font-family: helvetica;
+  font-size: 30px;
+  text-align: center;
+}
+
+.main-text23 {
+  position: relative;
+  top: -275px;
+  right: 88px;
+}
+
+.main-text23 p {
+  font-family: gergel;
+  font-size: 90px;
+}
+
+.fio {
+  position: relative;
+  right: 40px;
+}
+
+.fio p {
+  font-family: gergel;
+  font-size: 35px;
+  text-align: right;
+}
+
+.collapsible-container {
+  position: relative;
+  bottom: 190px;
+  left: 50px;
+  width: 93%;
+}
+
+.collapsible {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-family: 'gergel';
+  font-size: 30px;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.collapsible:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  font-family: 'helvetica';
+  font-size: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 5px 5px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.content p {
+  padding: 0 18px 18px;
+  margin: 0;
+}
+
+.back-to-top {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: 'gergel';
+  font-size: 30px;
+  text-decoration: none;
+  z-index: 99;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 5px;
+}
+
+.back-to-top:hover {
+  transform: translateX(-50%) translateY(-5px);
+}
+
+.container {
+  background: black;
+
+  display: flex;
+  justify-content: center;
+
+  box-sizing: border-box;
+  padding-bottom: 40px;
+}
+
+.discografy-content {
+  margin-top: 100px;
+  min-width: 1200px;
+}
+
+.section-topic {
+  width: 100%;
+  text-align: center;
+  color: white;
+  
+  font-family: 'helvetica';
+  font-size: 10em;
+  font-weight: bold;
+}
+
+.content-wrapper {
+  margin-top: 100px;
+  max-width: 1200px;
+}
+
+.album-content {
+  width: 100%;
+
+  display: flex;
+
+  gap: 30px;
+
+  margin-bottom: 40px;
+}
+
+.album-cover {
+  width: 600px;
+  aspect-ratio: 1/1;
+
+  background-image: url('./photos/imywiw18.jpg');
+
+  background-position: center;
+  background-size: cover;
+}
+
+.album-description {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+
+  font-size: 22px;
+  font-family: 'helvetica';
+  font-weight: bold;
+}
+
+.album-title {
+  font-size: 30px;
+  font-family: 'lauv';
+
+  text-transform: uppercase;
+}
+
+.listen-album {
+  width: 100%;
+
+  font-size: 25px;
+  font-family: 'helvetica';
+  font-weight: bold;
+
+  margin-bottom: 30px;
+}
+
+.album-title-intext {
+
+}
+
+.album-link {
+  color: #ff63b4;
+}
+
+.title-tracklist {
+  font-size: 40px;
+  font-weight: bold;
+
+  margin-bottom: 20px;
+}
+
+.tracklist {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.album-track {
+  width: 100%;
+  background: rgba(45, 45, 45, 0.7);
+
+  border-radius: 5px;
+
+  box-sizing: border-box;
+  padding: 20px;
+
+  font-size: 25px;
+  font-family: 'lauv';
+
+  transition: 0.25s;
+
+}
+
+.album-track:hover {
+  background: rgba(70, 70, 70, 0.9);
+  text-decoration: underline;
+}
+
+.form-wrapper {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 30px;
+}
+
+.comment-form {
+  width: 30%;
+  height: 200px;
+
+  background: rgba(45, 45, 45, 0.7);
+
+  border: none;
+  border-radius: 5px;
+
+  box-sizing: border-box;
+  padding: 10px;
+
+  color: white;
+
+  resize: none;
+  outline: none;
+}
+
+.send-button {
+  box-sizing: border-box;
+  padding: 5px 10px;
+
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'helvetica';
+  color: white;
+
+  background: rgba(45, 45, 45, 0.7);
+
+  margin-top: 10px;
+
+  cursor: pointer;
+
+  border: none;
+  outline: none;
+}
